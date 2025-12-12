@@ -9,6 +9,12 @@ on:
 jobs:
 
   test:
+    env:
+      HOST: localhost
+      PORT: 5432
+      USER: root
+      PASSWORD: root
+      DBNAME: root
     runs-on: ubuntu-latest
     strategy:
       matrix:
